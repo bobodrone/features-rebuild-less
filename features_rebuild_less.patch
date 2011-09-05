@@ -1,28 +1,3 @@
-diff --git a/web/profiles/elvaco/elvaco.install b/web/profiles/elvaco/elvaco.install
-index 19361b0..f8040e8 100644
---- a/web/profiles/elvaco/elvaco.install
-+++ b/web/profiles/elvaco/elvaco.install
-@@ -156,9 +156,9 @@ function elvaco_install() {
-   variable_set('ec_sms_api_id', 3308265);
-   variable_set('ec_sms_user', 'elvaco');
-   variable_set('ec_sms_password', 'dm2000%');
--  
-+
-   variable_set('theme_elvaco_settings', $theme_elvaco_settings);
--  
-+
-   // These variables cant be set in a feature becase they need to be in
-   // the db table variables to work correctly.
-   variable_set('file_private_path', 'sites/elvaco.se/private');
-@@ -166,7 +166,7 @@ function elvaco_install() {
- 
-   //variable_set('site_mail', 'ecs@elvaco.se');
-   //variable_set('site_name', 'Elvaco configuration system');
--
-+  features_rebuild();
- }
- 
- /**
 diff --git a/web/profiles/elvaco/modules/features/features.module b/web/profiles/elvaco/modules/features/features.module
 index 2756bd5..4cb8b13 100644
 --- a/web/profiles/elvaco/modules/features/features.module
