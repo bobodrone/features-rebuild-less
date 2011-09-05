@@ -1,7 +1,7 @@
-diff --git a/web/profiles/elvaco/modules/features/features.module b/web/profiles/elvaco/modules/features/features.module
+diff --git a/features.module b/features.module
 index 2756bd5..4cb8b13 100644
---- a/web/profiles/elvaco/modules/features/features.module
-+++ b/web/profiles/elvaco/modules/features/features.module
+--- a/features.module
++++ b/features.module
 @@ -213,7 +213,10 @@ function features_theme() {
   * Implements hook_flush_caches().
   */
